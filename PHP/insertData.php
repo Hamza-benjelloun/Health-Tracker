@@ -1,0 +1,1 @@
+<?php $obj = new stdClass(); $obj->Firstname = 'yasma'; $obj->Lastname = 'ben'; $obj->Cin = 'Bh618304'; $obj->State = ''; $obj->Temperature = ''; $obj->Tension = ''; $obj->RFID = 'CC 1E 0C 30'; echo json_encode($obj); ?>
