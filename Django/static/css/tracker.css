@@ -1,0 +1,6 @@
+body {
+    background: url('../images/HealthTrackerBg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    overflow: hidden;
+}

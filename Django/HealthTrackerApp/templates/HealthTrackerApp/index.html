@@ -1,0 +1,34 @@
+{% extends 'HealthTrackerApp/main.html' %}
+{% block content %}
+{% if messages%}
+        <div class="alert alert-danger" role="alert" style="text-align:center;position:absolute;width:100%;">
+            {% for message in messages %}
+                {{message}}
+            {% endfor %}
+        </div>
+{% endif %}
+    
+<div class="row d-flex justify-content-center">
+    <div class="col-md-6 content">
+        <h1>
+            Health Tracker
+        </h1>
+        <br>
+        <p>The art of medicine consists of amusing the patient while nature cures the disease</p>
+    </div>
+    <div class="col-md-6">
+        <fieldset>
+            <button>
+                Sign In
+            </button>            
+            <form action="" method="POST">
+            {% csrf_token %}
+            <input name="username" type="text" style="margin-top:70px;" placeholder=" Username"><br/>
+            <input name="password" type="password" placeholder=" Password"><br/>
+            <input id="connect" type="submit" style="display:none;">
+            </form>
+            <a onclick="$('#connect').click();">Submit</a>
+        </fieldset>
+    </div>
+</div>
+{% endblock %}
